@@ -51,14 +51,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 250px;
   padding: 10px;
-  color: $basic-white;
-  background-color: $main-color;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  border-radius: 10px;
+  color: $basic-black;
+  background-color: $btn;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 100px;
   border: none;
 
   &:hover {
@@ -68,30 +68,14 @@ button {
   &:active {
     opacity: 0.8;
   }
-}
 
-.container {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 50px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 25px;
+  &:disabled {
+    opacity: 0.6;
+    background: grey;
+    cursor: not-allowed;
   }
 }
 
-.heading {
-  margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 48px;
-  font-weight: 400;
-
-  &--small {
-    margin-bottom: 25px;
-    font-size: 36px;
-  }
-
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
-  }
+::placeholder {
+  color: $input-color;
 }
