@@ -9,6 +9,7 @@ class App {
     this.iframe = document.querySelector('iframe');
     this.player = new Vimeo.Player(this.iframe);
     this.btnPlay = document.querySelector('#button-play')
+    this.videoBcg = document.querySelector('.video__img')
   }
 
 
@@ -16,6 +17,7 @@ class App {
     const playVideo = () => {
       this.player.play()
       this.btnPlay.style.display = 'none'
+      this.videoBcg.style.display = 'none'
     }
 
     this.btnPlay.addEventListener('click', playVideo);

@@ -34,7 +34,7 @@
 
   &--form {
     padding: 60px 90px;
-    background: $bcg no-repeat 50% 50% url("../img/bcg/form-bcg.webp");
+    background: $bcg no-repeat 100% 0 url("../img/bcg/form-bcg.webp");
   }
 
   @media (max-width: $tablet-width) {
@@ -44,7 +44,7 @@
 
     &--form {
       padding: 50px 20px;
-      background: $bcg no-repeat 50% 0 url("../img/bcg/form-bcg.webp");
+      background: $bcg no-repeat 60% 50% url("../img/bcg/form-bcg.webp");
     }
   }
 }
