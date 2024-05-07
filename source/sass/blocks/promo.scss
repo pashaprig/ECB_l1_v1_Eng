@@ -1,5 +1,6 @@
 .promo {
   display: flex;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -28,8 +29,7 @@
 
   &:first-child {
     box-sizing: border-box;
-    max-width: 730px;
-    padding-right: 130px;
+    max-width: 580px;
   }
 
   &--form {

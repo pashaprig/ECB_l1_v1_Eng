@@ -1,8 +1,8 @@
 .header-promo-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  padding-top: 0;
+  padding-left: 30px;
+
 
   @media (max-width: $tablet-width) {
     padding: 15px 0;

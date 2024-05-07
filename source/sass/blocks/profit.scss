@@ -1,0 +1,105 @@
+.profit__wrapper {
+  z-index: 1;
+  box-sizing: border-box;
+  min-width: 500px;
+  height: 284px;
+  padding: 20px 50px;
+  padding-bottom: 16px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 25px;
+  background: $bcg no-repeat url("../img/bcg/profit-bcg.webp");
+  box-shadow: 0px 4px 4px 0px rgba(196, 196, 196, 0.25);
+
+  @media (max-width: $tablet-width) {
+    min-width: unset;
+    height: unset;
+    margin: 0;
+    padding: 20px 15px;
+    background: $bcg no-repeat url("../img/bcg/profit-bcg-mob.webp");
+    background-size: cover;
+  }
+}
+
+.profit__amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profit__sum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  font-size: 20px;
+  font-weight: 700;
+
+  @media (max-width: $tablet-width) {
+    gap: 15px;
+  }
+}
+
+.profit__img {
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+    width: 90%;
+  }
+}
+
+#calcResult {
+  width: 103px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #6F6F6F;
+  font-size: 20px;
+  font-weight: 700;
+ }
+
+ #profitValue {
+  width: 103px;
+  padding: 10px;
+  border-radius: 10px;
+  background: $main2-color;
+ }
+
+.profit-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 50px;
+  }
+}
+
+.profit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 1px solid #6F6F6F;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #146879;
+  }
+
+  &--active {
+    border: none;
+    background: $main2-color;
+  }
+}
