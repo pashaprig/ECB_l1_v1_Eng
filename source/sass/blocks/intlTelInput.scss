@@ -17,11 +17,13 @@
 .iti input[type="text"] {
   position: relative;
   z-index: 0;
-  max-width: 100%;
+  width: 100%;
   margin-top: 0 !important;
   margin-bottom: 0;
   padding-right: 36px;
   margin-right: 0;
+  max-height: 50px;
+  height: 50px;
 }
 .iti__flag-container {
   position: absolute;
